@@ -1,0 +1,91 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/inputField.css">
+    <!-- <script src="js/inputField.js"></script> -->
+    <style>
+        :root {
+            --accent-color: #E83046;
+            /* [var(--accent-color)] */
+            --text-color-black: #949ba4;
+            /* [var(--text-color-black)] */
+            --text-color-white: #ffffff;
+            /* [var(--text-color-white)] */
+            --background-color1: #2c2c2c;
+            /* [var(--background-color1)] */
+            --background-color2: #1E1E1E;
+            /* [var(--background-color2)] */
+        }
+    </style>
+    <link rel=icon href="Images/favicon-biceps-fill.png">
+    <!-- <link rel=icon href="Images/favicon-dumbbell-light.png" media="(prefers-color-scheme: light)">
+    <link rel=icon href="Images/favicon-dumbbell-dark.png" media="(prefers-color-scheme: dark)"> -->
+    <title>Login</title>
+</head>
+<!-- <body class="bg-[var(--background-color1)] font-[poppins]"> -->
+<body class="bg-[var(--background-color1)] font-[poppins]">
+    <div class="content-wrapper-body max-w-[800px] mx-auto">
+        <!-- how tf do i center a div?! -->
+        <style>
+            .login-container{
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        </style>
+        <!-- google style input -->
+        <!-- <div class="form__div mt-10">
+            <input type="text" class="form__input" placeholder=" ">
+            <label for="" class="form__label">Email</label>
+        </div> -->
+        <div class="login-container bg-[var(--background-color2)] grid grid-cols-2 w-[800px] mx-auto rounded-xl shadow-2xl">
+        <!-- <div class="login-container bg-[var(--background-color2)] grid grid-cols-2 w-[800px] mx-auto mt-10 rounded-xl shadow-2xl"> -->
+            <div class="login-image-container">
+                <!-- <img class="login-image h-full object-cover rounded-tl-xl rounded-bl-xl" src="{{baseUrl}}/{{login.img}}" alt=""> -->
+                <img class="login-image h-full object-cover rounded-tl-xl rounded-bl-xl" src="{{login.img.url}}" alt="">
+            </div>
+            <div class="login-main px-8 py-12">
+                <div class="login-title text-[var(--text-color-white)] text-center text-5xl mb-6">Login</div>
+                <div class="login-subtitle text-[var(--text-color-white)] text-center text-xs mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, similique</div>
+                <div class="form__div mt-5">
+                    <input type="text" class="form__input" placeholder=" ">
+                    <label for="" class="login-email form__label" type="email">Email</label>
+                </div>
+                <div class="form__div mt-5">
+                    <input type="text" class="form__input" placeholder=" ">
+                    <label for="" class="login-password form__label" type="password">Password</label>
+                </div>
+                <!-- <div class="login-email text-[var(--text-color-white)] mb-1">Enter email</div>
+                <input class="login-email-form rounded-md w-full border-none shadow-lg px-3 py-2 text-xs mb-4" type="email" placeholder="email">
+                <div class="login-password text-[var(--text-color-white)] mb-1">Enter password</div>
+                <input class="login-password-form rounded-md w-full border-none shadow-lg px-3 py-2 text-xs mb-6" type="password" placeholder="password"> -->
+                <div class="login-button-container">
+                    <button class="login-button bg-[var(--accent-color)] w-full text-[var(--text-color-white)] rounded-lg px-3 py-3 mb-4 duration-200 hover:bg-white hover:text-black">Login</button>
+                </div>
+                <div class="login-remember-me-forgot-password-container text-[var(--text-color-white)] accent-[var(--accent-color)] mb-5 flex justify-between">
+                    <div class="login-radio-button flex justify-center items-center">
+                        <input type="checkbox" class="remember-me" checked>
+                        <label for="remember-me" class="text-xs pl-2">remember me</label>
+                    </div>
+                    <a class="login-forgot-password text-[var(--text-color-white)] text-xs underline hover:no-underline" href="">Forgot password?</a>
+                </div>
+                <div class="login-or-section-container flex justify-center align-center relative h-5">
+                    <hr class="w-full">
+                    <div class="login-or-section text-[var(--text-color-white)] bg-[var(--background-color2)] px-2 absolute left-auto right-auto bottom-2">or</div>
+                </div>
+                <div class="login-new-account text-[var(--text-color-white)] text-xs">create an account <a class="login-new-account-link underline hover:no-underline" href="register.html" target="_blank">here</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

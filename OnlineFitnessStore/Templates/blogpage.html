@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: {
+                        accentColor: "#E83046",
+                        text: "#ffffff",
+                        background1: "#2c2c2c",
+                        background2: "#1E1E1E",
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Blog Page</title>
+</head>
+<body class="bg-background1 font-[poppins] h-[100vh] text-text overflow-x-hidden">
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- NAVBAR -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="nav-container bg-gradient-to-b from-background1 to-[#ffffff00] sticky top-0 h-[60px] p-[16px] z-[20] font-sans">
+        <div class="content-wrapper-nav max-w-[896px] h-full mx-auto flex justify-between items-center">
+            <div class="nav-logo font-extrabold text-white transition-[5s] hover:text-accentColor">GYM-LOGO</div>
+            <div class="nav-links-container flex relative left-[30px]">
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Home</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Shop</button>
+                <button class="nav-login text-accentColor text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Blog</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Contact Us</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Contact Us</button>
+            </div>
+            <div class="nav-right flex items-center gap-3">
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[4px] rounded-md transition-[5s] hover:bg-accentColor hover:text-white">Login</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[4px] rounded-md transition-[5s] bg-accentColor hover:bg-[#ffffff00] hover:text-white">Join Us</button>
+                <!-- <button class="nav-login text-lightBlack px-[10px] rounded-md text-[15px] font-medium transition-[5s] hover:bg-darkGreen hover:text-dirtyWhite">Login</button> -->
+                <!-- <i class="fi fi-br-search relative top-[4px]"></i> -->
+                <!-- <i class="fi fi-sr-user relative top-[4px]"></i> -->
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- BLOG-MAIN -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="blog-main-container">
+        <div class="blog-main-wrapper max-w-[896px] mx-auto rounded-lg bg-background2 p-5 mb-5 mt-10">
+            <div class="blog-image-container">
+                <img class="blog-image rounded-lg mb-3 h-[350px] object-cover mx-auto" src="../static/images/maxresdefault.jpg" alt="">
+            </div>
+            <div class="blog-title text-[40px]">Here's how to loose fat in 0.1ms</div>
+            <div class="blog-text text-sm font-light leading-7">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem dolorem enim expedita ratione aliquam nobis dignissimos ullam inventore provident maiores modi culpa ea, repudiandae voluptas obcaecati? Illo illum ex quidem facere mollitia consectetur, magnam repellendus ab ullam incidunt rerum quia aut amet ipsum sed nulla ipsam, rem iste? Perferendis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic obcaecati, molestiae animi consequatur nam, sequi, magnam ea soluta porro sunt tenetur qui exercitationem non repudiandae ratione suscipit blanditiis optio ad at dolores! Possimus impedit aut perferendis dignissimos eaque voluptatum? Atque laudantium temporibus libero explicabo voluptates aliquam voluptatum ut quidem modi animi blanditiis at, numquam sed facilis dolor quae. Ipsam officiis animi vero consequatur quod ratione aliquam quibusdam dolores deleniti similique mollitia nam, nulla cumque? Saepe quam molestias dolorum vero?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo expedita vitae dolores. Quod, fuga, reiciendis aspernatur beatae harum ullam consequuntur cupiditate eos iusto sequi odio esse molestiae totam possimus excepturi aliquam, voluptatibus eligendi laboriosam atque at corrupti debitis explicabo. Rem, explicabo? Culpa in, laborum voluptates nisi, eaque voluptas ipsum quod cupiditate modi asperiores repellat! Enim, obcaecati laboriosam quis ab eaque vero saepe excepturi aliquid nulla odio necessitatibus? Pariatur error optio quam exercitationem blanditiis suscipit distinctio in natus architecto accusantium illum accusamus sequi, reprehenderit eius corrupti repellat modi quaerat quibusdam, similique laborum. Accusamus sint dolor provident officia. Ipsum reiciendis provident porro!</p>
+                <ul>Lorem ipsum dolor sit amet consectetur adipisicing.</ul>
+                <ul>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, explicabo!</ul>
+                <ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa reiciendis pariatur cupiditate error minima.</ul>
+                <ul>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, unde possimus? Reiciendis.</ul>
+                <ul>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis debitis tempora pariatur nisi dolore, quaerat vero.</ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse impedit quos in blanditiis ad necessitatibus nihil quasi. Temporibus exercitationem quibusdam sint, nostrum dignissimos aspernatur autem similique deleniti distinctio minima accusamus, et facere iusto nemo esse ratione veritatis dolores cupiditate nam. Non natus autem excepturi omnis ad optio asperiores nostrum eveniet quam adipisci eligendi, voluptas numquam sequi nemo aliquam ratione illum impedit earum exercitationem in odit consequuntur quasi. Sunt aspernatur officia nostrum incidunt cupiditate nesciunt ipsum quis esse nam vel?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea eveniet, quisquam magni voluptatum maxime tenetur molestiae cumque dolorum odit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

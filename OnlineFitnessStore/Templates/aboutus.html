@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/41bd6fc6ae.js" crossorigin="anonymous"></script>
+    <!-- Flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: {
+                        accentColor: "#E83046",
+                        text: "#ffffff",
+                        background1: "#2c2c2c",
+                        background2: "#1E1E1E",
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Registration Page</title>
+</head>
+<body class="bg-background1 font-[poppins] h-[100vh] text-text overflow-x-hidden">
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- NAVBAR -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="nav-container bg-gradient-to-b from-background1 to-[#ffffff00] sticky top-0 h-[60px] p-[16px] z-[20] font-sans">
+        <div class="content-wrapper-nav max-w-[896px] h-full mx-auto flex justify-between items-center">
+            <div class="nav-logo font-extrabold text-white transition-[5s] hover:text-accentColor">GYM-LOGO</div>
+            <div class="nav-links-container flex relative left-[30px]">
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Home</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Shop</button>
+                <button class="nav-login text-accentColor text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">About Us</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Contact Us</button>
+            </div>
+            <div class="nav-right flex items-center gap-3">
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[4px] rounded-md transition-[5s] hover:bg-accentColor hover:text-white">Login</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[4px] rounded-md transition-[5s] bg-accentColor hover:bg-[#ffffff00] hover:text-white">Join Us</button>
+                <!-- <button class="nav-login text-lightBlack px-[10px] rounded-md text-[15px] font-medium transition-[5s] hover:bg-darkGreen hover:text-dirtyWhite">Login</button> -->
+                <!-- <i class="fi fi-br-search relative top-[4px]"></i> -->
+                <!-- <i class="fi fi-sr-user relative top-[4px]"></i> -->
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- ABOUT-MAIN -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="about-container">
+        <div class="about-wrapper max-w-[896px] mx-auto">
+            <img class="about-logo invert mx-auto w-[250px] h-[200px] object-cover mt-12 -mb-5" src="../static/images/pngwing.com.png" alt="">
+            <div class="about-title text-center text-[90px] mb-3">Gym Name</div>
+            <div class="about-subtitle text-center w-[850px] text-base font-light leading-7 mx-auto mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, exercitationem et eveniet inventore nam expedita laboriosam culpa, dignissimos quidem commodi quisquam? Molestiae sint nihil dolor accusamus veniam ex, deserunt blanditiis cumque exercitationem vero earum rem beatae tempora, tempore porro? Voluptatum!</div>
+        </div>
+        <div class="about-devs-container flex justify-center bg-accentColor pb-5">
+            <div class="about-item1 flex items-center justify-center flex-col w-[300px] text-center p-5">
+                <img class="about-image w-[200px] h-[200px] m-9 object-cover rounded-full" src="../static/images/How-Three-Personal-Trainers-Dress-for-the-Gym-Gear-Patrol-mat.jpg" alt="">
+                <div class="about-name text-2xl mb-3">Md. Iftekhar Hossain</div>
+                <div class="about-description text-sm font-light leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime laboriosam cumque facere corporis unde autem. Architecto rem provident eum.</div>
+            </div>
+            <div class="about-item1 flex items-center justify-center flex-col w-[300px] text-center p-5">
+                <img class="about-image w-[200px] h-[200px] m-9 object-cover rounded-full" src="../static/images/How-Three-Personal-Trainers-Dress-for-the-Gym-Gear-Patrol-mat.jpg" alt="">
+                <div class="about-name text-2xl mb-3">Taki Tazwar Ritom</div>
+                <div class="about-description text-sm font-light leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime laboriosam cumque facere corporis unde autem. Architecto rem provident eum.</div>
+            </div>
+            <div class="about-item1 flex items-center justify-center flex-col w-[300px] text-center p-5">
+                <img class="about-image w-[200px] h-[200px] m-9 object-cover rounded-full" src="../static/images/How-Three-Personal-Trainers-Dress-for-the-Gym-Gear-Patrol-mat.jpg" alt="">
+                <div class="about-name text-2xl mb-3">Md. Arash Kursi</div>
+                <div class="about-description text-sm font-light leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime laboriosam cumque facere corporis unde autem. Architecto rem provident eum.</div>
+            </div>
+        </div>
+        <div class="about-social-container bg-accentColor flex justify-center items-center gap-[50px] h-[95px] pb-10">
+            <div class="about-icon-container rounded-full h-[50px] w-[50px] relative">
+                <i class="fi fi-brands-facebook text-[50px] absolute -top-[5px]"></i>
+            </div>
+            <div class="about-icon-container bg-white rounded-full h-[50px] w-[50px] relative">
+                <i class="fi fi-brands-twitter text-[30px] text-accentColor absolute top-[8px] left-[12px]"></i>
+            </div>
+            <div class="about-icon-container bg-white rounded-full h-[50px] w-[50px] relative">
+                <i class="fi fi-brands-youtube text-[30px] text-accentColor absolute top-[8px] left-[10px]"></i>
+            </div>
+            
+        </div>
+        <div class="about-copyright bg-accentColor text-sm font-light leading-5 text-center pb-5">This Website is © Copyright 2023 Gym Name</div>
+    </div>
+</body>
+</html>
