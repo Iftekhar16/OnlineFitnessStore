@@ -33,3 +33,6 @@ def profile(request):
 
 def register(request):
     return render(request,'register.html');
+
+def shop(request):
+    return render(request,'shop.html');
